@@ -1,6 +1,6 @@
 module.exports = function(){
  $.gulp.task('copy:image', function () {
-  return $.gulp.src(['source/images/**/*.*', '!source/images/svg/**/*.*'], {
+  return $.gulp.src(['source/images/**/*.*', '!source/images/.ignore/**/*.*'], {
     since: $.gulp.lastRun('copy:image')
   })
     .pipe($.gulp.dest($.PATH.ROOT + '/assets/img'));
