@@ -1,0 +1,14 @@
+.wrap
+  .row
+    - var count = 1;
+      while count < 13
+        .test-card
+          .test-card__header 
+            h1 Title Header #{count++}
+          .test-card__content 
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias delectus minus veniam magni rerum ut atque deserunt, quod adipisci nemo!
+          .test-card__footer
+            ul.test-card__nav
+              - var n = 1;
+                while n < 5
+                  li Item #{n++}

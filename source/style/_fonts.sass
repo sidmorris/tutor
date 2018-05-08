@@ -1,0 +1,32 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+
+		@if $asset-pipeline == true 
+			src: font-url('#{$file-path}.eot')
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype')
+		@else
+			src: url('#{$file-path}.eot')
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+
+
++font-face ("roboto-ex", "../fonts/Roboto/RobotoThin", 100, normal)
++font-face ("roboto-ex", "../fonts/Roboto/RobotoThinItalic", 100, italic)
+
++font-face ("roboto-ex", "../fonts/Roboto/RobotoLight", 250, normal)
++font-face ("roboto-ex", "../fonts/Roboto/RobotoLightItalic", 250, italic)
+
++font-face ("roboto-ex", "../fonts/Roboto/Roboto",      400,   normal)
++font-face ("roboto-ex", "../fonts/Roboto/RobotoItalic",      400,   italic)
+
++font-face ("roboto-ex", "../fonts/Roboto/RobotoMedium",      600,   normal)
++font-face ("roboto-ex", "../fonts/Roboto/RobotoMediumItalic",      600,   italic)
+
++font-face ("roboto-ex", "../fonts/Roboto/RobotoBold",      700,     normal)
++font-face ("roboto-ex", "../fonts/Roboto/RobotoBoldItalic", 700, italic)
+
+
+
