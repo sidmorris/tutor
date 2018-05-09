@@ -1,9 +1,15 @@
 section.top-line
-	div.site-logo
-	nav.main-nav
-	a.search
-	a.welcome
-	a.basket
-	div.top-contact.top-line__top-contact
-		p.top-contact__phone
-		p.top-contact__schedule
+	.top-line__container
+		div.site-logo.top-line__site-logo
+			+icon('icon-logo')
+		nav.main-nav
+			ul.main-nav__list
+				each i in ['Каталог','Доставка и оплата','О компании']
+					li.main-nav__item
+						a(href='').main-nav__link= i
+		a(href='').search.top-line__search Поиск
+		a(href='').welcome Вход
+		a(href='').basket Корзина
+		div.top-contact.top-line__top-contact
+			p.top-contact__schedule С 10 до 20, ежедневно
+			p.top-contact__phone +7(000) 000-00-00

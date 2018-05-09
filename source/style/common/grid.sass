@@ -3,12 +3,11 @@
   &:hover
     fill: red
 
-.wrap
+.container
   +wrapper()
 
 .row
   +row-flex()
-  +xs(justify-content, center)
 
 .test-card
   +col()
@@ -17,7 +16,7 @@
     size: 300px auto
   display: flex
   flex-wrap: wrap
-  color: $color-main gray(90%)
+  color: $color-text-main gray(90%)
   padding: $card-padding
 
 .test-card__header

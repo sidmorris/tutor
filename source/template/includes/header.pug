@@ -1,2 +1,27 @@
+-
+	var data = {
+		"item1":{
+			"title":"Крем-брюле и пломбир с малиновым джемом",
+			"link":"",
+			"img":"slider-1.png"
+		},
+		"item2":{
+			"title":"Шоколадный пломбир и лимонный сорбет",
+			"link":"",
+			"img":"slider-2.png"
+		},
+		"item3":{
+			"title":"Пломбир с помадкой и клубничный щербет",
+			"link":"",
+			"img":"slider-3.png"
+		}
+	}
 header.header
 	div.carousel
+		for i in data
+			.carousel__item
+				.carousel__img
+					img(src=`assets/img/sliders/${i.img}` alt= i.title)
+				.carousel__title= i.title
+				a(href="").carousel__button Давайте оба!
+			.cahrousel__nav-dot

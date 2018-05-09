@@ -1,7 +1,7 @@
 
 mixin icon(name,mod)
-	-var modificator = mod || ''
-		svg(class="icon " + name + ' ' + modificator)
+	- var modificator = mod || ''
+		svg(class="icon " + name + ' ' + modificator)&attributes(attributes)
 			use(xlink:href="#" + name)
 
 
