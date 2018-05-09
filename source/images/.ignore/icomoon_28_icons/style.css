@@ -1,0 +1,72 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-basket {
+  width: 1.0498046875em;
+}
+
+.icon-basket-red {
+  width: 1.0498046875em;
+}
+
+.icon-bg-post {
+  width: 2.5458984375em;
+}
+
+.icon-checkbox-on {
+  width: 1.173828125em;
+}
+
+.icon-cross-big {
+  width: 1.05859375em;
+}
+
+.icon-entrance {
+  width: 1.10546875em;
+}
+
+.icon-filter-button {
+  width: 0.869140625em;
+}
+
+.icon-heart {
+  width: 1.154296875em;
+}
+
+.icon-icon-right-small {
+  width: 0.6669921875em;
+}
+
+.icon-logo {
+  width: 2.40625em;
+}
+
+.icon-logo-htmlacademy {
+  width: 2.9326171875em;
+}
+
+.icon-pin {
+  width: 0.5712890625em;
+}
+
+.icon-ruble {
+  width: 0.861328125em;
+}
+
+.icon-select-arrow {
+  width: 1.7998046875em;
+}
