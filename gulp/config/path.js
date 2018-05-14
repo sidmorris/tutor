@@ -1,6 +1,11 @@
 module.exports = {
 	postPlugins: [
 		// require('precss'),
+		require("postcss-import")({
+			path: [
+				"source/style/common"
+			]
+		}),
 		require('postcss-cssnext'),
 		require('postcss-short'),
 		require('postcss-easing-gradients'),
@@ -22,7 +27,8 @@ module.exports = {
 		'./gulp/tasks/appJs.js',
 		'./gulp/tasks/copy.js',
 		'./gulp/tasks/clear.js',
-		'./gulp/tasks/styles.js',
+		// './gulp/tasks/styles.js',
+		'./gulp/tasks/postcss.js',
 		'./gulp/tasks/pug.js',
 		'./gulp/tasks/serve.js',
 		'./gulp/tasks/watch.js'

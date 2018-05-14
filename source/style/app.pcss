@@ -1,0 +1,61 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import "vars.pcss";
+@import "base.pcss";
+
+/* top-line */
+.top-line{
+	padding-top: 15px;
+	color: gray(90%);
+	& a{
+		color: gray(90%);
+	}
+}
+.top-line .container{
+	@apply --container;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.top-line__site-logo{
+	margin-right: 10px;
+}
+.top-line__search{
+	margin-left: auto;
+}
+.top-line__top-contact{
+	position: absolute;
+	top: 80px;
+	right: 0px;
+}
+/* .top-contact */
+.top-contact{
+	text-align: right;
+}
+
+/* .site-logo */
+.site-logo .icon{
+	size: 150px 75px;
+}
+
+/* .main-nav */
+.main-nav__list{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	a{
+		text-decoration: none;
+	}
+}
+.main-nav__item{
+	margin-left: 10px;
+}
+/* .search */
+.top-line{
+	& :matches(.search, .welcome, .basket){
+		@apply --btn;
+		background-color: color(#fff alpha(0.15));
+	}
+}
